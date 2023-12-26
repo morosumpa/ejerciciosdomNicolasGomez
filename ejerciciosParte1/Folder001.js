@@ -98,3 +98,11 @@ let primerElementoLi = document.querySelector('ul');
 console.log('nodeType:', primerElementoLi.nodeType);/*el tipo de nodo*/
 console.log('nodeName:', primerElementoLi.nodeName);/*el nombre del nodo*/
 console.log('tagName:', primerElementoLi.tagName);/*el nombre de la etiqueta del elemento*/
+
+/*ej 011*/
+// Selecciona el enlace <a> 
+let enlace = document.querySelector('a');
+
+// Muestra en la consola el innerHTML y outerHTML del enlace
+console.log('innerHTML:', enlace.innerHTML);
+console.log('outerHTML:', enlace.outerHTML);
