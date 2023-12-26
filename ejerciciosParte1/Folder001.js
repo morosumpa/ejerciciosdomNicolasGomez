@@ -25,3 +25,14 @@ for (let i = 0; i < childNodes.length; i++) {
 
  /* Muestra la información en la consola*/
  console.log('Último Hijo:', ultimohijo);
+
+/*ej 004*/
+
+// Obtiene el elemento h1 por su etiqueta
+let h1padre = document.querySelector('h1');
+
+// Accede al elemento padre del h1 usando parentElement
+let divPadre = h1padre.parentElement;
+
+// Muestra la información en la consola
+console.log('Elemento Padre:', divPadre);
