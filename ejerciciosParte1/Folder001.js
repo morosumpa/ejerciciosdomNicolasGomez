@@ -89,3 +89,12 @@ let siguienteElementoParrafo = elementoparrafo2.nextElementSibling;/*nextElement
 
 /* muestra primer elemento del div contenedor */
 console.log('El posterior elemento del div es ' + siguienteElementoParrafo);
+
+/*ej 010*/
+// Selecciona el primer elemento li dentro de la lista
+let primerElementoLi = document.querySelector('ul');
+
+// Muestra en la consola la información solicitada
+console.log('nodeType:', primerElementoLi.nodeType);/*el tipo de nodo*/
+console.log('nodeName:', primerElementoLi.nodeName);/*el nombre del nodo*/
+console.log('tagName:', primerElementoLi.tagName);/*el nombre de la etiqueta del elemento*/
