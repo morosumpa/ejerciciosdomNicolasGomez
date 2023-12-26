@@ -36,3 +36,16 @@ let divPadre = h1padre.parentElement;
 
 // Muestra la información en la consola
 console.log('Elemento Padre:', divPadre);
+
+/*ej 005*/
+
+// Obtiene el elemento h1 por su etiqueta
+let listaUL = document.querySelector('ul');
+
+// Accede al elemento padre del h1 usando parentElement
+let elementosHijos = listaUL.children;
+
+// Muestra los 3 elementos de la lista
+for (let i = 0; i < elementosHijos.length; i++) {
+    console.log('Elemento lista ' + i + 'es', elementosHijos[i]);
+}
