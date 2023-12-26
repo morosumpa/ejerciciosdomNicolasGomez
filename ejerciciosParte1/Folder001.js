@@ -49,3 +49,13 @@ let elementosHijos = listaUL.children;
 for (let i = 0; i < elementosHijos.length; i++) {
     console.log('Elemento lista ' + i + 'es', elementosHijos[i]);
 }
+
+/*ej 006*/
+/*variable para trabajar con un elemento del html*/
+let elementoContenedor = document.getElementById('contenedor');
+
+/*variable primerElementoContenedor para guardar los elementos del doc html*/
+let primerElementoContenedor = elementoContenedor.firstElementChild;/*firstElementChild recoje los valores del primer elemento del div que encuentre en este*/
+
+/*muestra primer elemento del div contenedor*/
+console.log('El primer elemento del div es' + primerElementoContenedor);
