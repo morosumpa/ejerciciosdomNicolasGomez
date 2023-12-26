@@ -12,3 +12,8 @@ for (let i = 0; i < childNodes.length; i++) {
 
 /*ej 002*/
 
+ // Accede al primer hijo del div mediante firstchild
+ var primerHijo = contenedor.firstChild;
+
+ // Muestra la información en la consola
+ console.log('Primer Hijo:', primerHijo);
