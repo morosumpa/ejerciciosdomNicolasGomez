@@ -114,3 +114,14 @@ let parrafo = document.querySelector('.parrafo');
 // Muestra en la consola el nodeValue y textContent del párrafo
 console.log('nodeValue:', parrafo.nodeValue);/* representa el texto contenido en el nodo.*/
 console.log('textContent:', parrafo.textContent);/*devuelve o establece el contenido de texto de un elemento y sus descendientes*/
+
+/*ej 013*/
+ // Selecciona el div con id "contenedor"
+ let divContenedor = document.getElementById('contenedor');
+
+ // Verifica si tiene el atributo hidden
+ if (divContenedor.hasAttribute('hidden')) {/*hasAttribute para comprobar los elementos asociados al estilo de una clase o elemento*/
+     console.log('El elemento está oculto');
+ } else {
+     console.log('El elemento no está oculto');
+ }
