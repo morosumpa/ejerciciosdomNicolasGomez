@@ -65,8 +65,17 @@ console.log('El primer elemento del div es' + primerElementoContenedor);
 let elementoContenedorlast = document.getElementById('contenedor');
 
 /*variable ultimoElementoContenedor para guardar los elementos del doc html*/
-let ultimoElementoContenedor = elementoContenedorlast.lastElementChild;/*ultimoElementoContenedor recoje los valores del ultimo elemento del div que encuentre en este*/
+let ultimoElementoContenedor = elementoContenedorlast.lastElementChild;/*lastElementChild recoje los valores del ultimo elemento del div que encuentre en este*/
 
 /*muestra primer elemento del div contenedor*/
 console.log('El último elemento del div es' + ultimoElementoContenedor);
 
+/*ej 008*/
+/* variable para trabajar con un elemento del html */
+let elementoparrafo = document.querySelector('.parrafo');/*sin el . delante de parrafo no te coje los valores*/
+
+/* variable elementoparrafo para guardar los elementos del doc html */
+let anteriorElementoParrafo = elementoparrafo.previousElementSibling;/*previousElementSibling recoje los valores al anterior que se haya seleccionado*/
+
+/* muestra primer elemento del div contenedor */
+console.log('El anterior elemento del div es ' + anteriorElementoParrafo);
