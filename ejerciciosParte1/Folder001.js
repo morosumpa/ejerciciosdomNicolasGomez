@@ -79,3 +79,13 @@ let anteriorElementoParrafo = elementoparrafo.previousElementSibling;/*previousE
 
 /* muestra primer elemento del div contenedor */
 console.log('El anterior elemento del div es ' + anteriorElementoParrafo);
+
+/*ej 009*/
+/* variable para trabajar con un elemento del html */
+let elementoparrafo2 = document.querySelector('.parrafo');/*sin el . delante de parrafo no te coje los valores*/
+
+/* variable elementoparrafo para guardar los elementos del doc html */
+let siguienteElementoParrafo = elementoparrafo2.nextElementSibling;/*nextElementSibling recoje los valores al posterior que se haya seleccionado*/
+
+/* muestra primer elemento del div contenedor */
+console.log('El posterior elemento del div es ' + siguienteElementoParrafo);
