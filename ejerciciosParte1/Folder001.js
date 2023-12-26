@@ -17,3 +17,11 @@ for (let i = 0; i < childNodes.length; i++) {
 
  // Muestra la información en la consola
  console.log('Primer Hijo:', primerHijo);
+
+ /*ej 003*/
+
+ /* Accede al primer hijo del div mediante lastChild*/
+ var ultimohijo = contenedor.lastChild;
+
+ /* Muestra la información en la consola*/
+ console.log('Último Hijo:', ultimohijo);
