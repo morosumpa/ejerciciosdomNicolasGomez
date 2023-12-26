@@ -104,5 +104,13 @@ console.log('tagName:', primerElementoLi.tagName);/*el nombre de la etiqueta del
 let enlace = document.querySelector('a');
 
 // Muestra en la consola el innerHTML y outerHTML del enlace
-console.log('innerHTML:', enlace.innerHTML);
-console.log('outerHTML:', enlace.outerHTML);
+console.log('innerHTML:', enlace.innerHTML);/*muestra desde donde se entra*/
+console.log('outerHTML:', enlace.outerHTML);/*muestra a donde llega*/
+
+/*ej 012*/
+// Selecciona el párrafo con clase "parrafo"
+let parrafo = document.querySelector('.parrafo');
+
+// Muestra en la consola el nodeValue y textContent del párrafo
+console.log('nodeValue:', parrafo.nodeValue);/* representa el texto contenido en el nodo.*/
+console.log('textContent:', parrafo.textContent);/*devuelve o establece el contenido de texto de un elemento y sus descendientes*/
