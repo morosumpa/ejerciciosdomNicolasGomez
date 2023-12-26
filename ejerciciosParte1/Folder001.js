@@ -59,3 +59,14 @@ let primerElementoContenedor = elementoContenedor.firstElementChild;/*firstEleme
 
 /*muestra primer elemento del div contenedor*/
 console.log('El primer elemento del div es' + primerElementoContenedor);
+
+/*ej 007*/
+/*variable para trabajar con un elemento del html*/
+let elementoContenedorlast = document.getElementById('contenedor');
+
+/*variable ultimoElementoContenedor para guardar los elementos del doc html*/
+let ultimoElementoContenedor = elementoContenedorlast.lastElementChild;/*ultimoElementoContenedor recoje los valores del ultimo elemento del div que encuentre en este*/
+
+/*muestra primer elemento del div contenedor*/
+console.log('El último elemento del div es' + ultimoElementoContenedor);
+
