@@ -1,4 +1,4 @@
- /*ej 001*/
+ /*ej 001 para corregir los apartados puede que debas tener que comentar de uno a otro, es decir, si quieres corregir el 1 abre un /* desde ej 002 hasta ej 004*/
 // Función para agregar una nueva fila a la tabla
 function agregarFila() {
     let tabla = document.getElementById("miTabla");
@@ -63,3 +63,29 @@ function mayorEdad() {
 }
 
 window.onload = mayorEdad;
+
+/*ej 004*/
+function agregarColumna() {
+    let tabla = document.getElementById('miTabla');
+    let filas = tabla.rows;
+
+    // realiza el bucle creando los botones y celdas
+    for (let i = 1; i < filas.length; i++) {
+        // Crear una nueva celda y un botón
+        let nuevaCelda = filas[i].insertCell(-1);
+        let botonEliminar = document.createElement('button');
+
+        // Configuraion el botón
+        botonEliminar.innerHTML = 'Eliminar';
+        botonEliminar.addEventListener('click', function () {//addEventListener para que realice la accion o sepa que capte lo que debe realizar en el click
+            // Lógica para eliminar la fila al hacer clic en el botón
+            let filaPadre = this.parentNode.parentNode;
+            filaPadre.parentNode.removeChild(filaPadre);
+        });
+
+        // Agrega el botón a la nueva celda
+        nuevaCelda.appendChild(botonEliminar);
+    }
+}
+
+window.onload = agregarColumna;

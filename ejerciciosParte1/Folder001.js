@@ -13,7 +13,7 @@ for (let i = 0; i < childNodes.length; i++) {
 /*ej 002*/
 
  // Accede al primer hijo del div mediante firstchild
- var primerHijo = contenedor.firstChild;
+ let primerHijo = contenedor.firstChild;
 
  // Muestra la información en la consola
  console.log('Primer Hijo:', primerHijo);
@@ -21,7 +21,7 @@ for (let i = 0; i < childNodes.length; i++) {
  /*ej 003*/
 
  /* Accede al primer hijo del div mediante lastChild*/
- var ultimohijo = contenedor.lastChild;
+ let ultimohijo = contenedor.lastChild;
 
  /* Muestra la información en la consola*/
  console.log('Último Hijo:', ultimohijo);
