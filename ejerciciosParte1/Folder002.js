@@ -21,3 +21,20 @@ function agregarFila() {
 window.onload = agregarFila;
 
 /*ej 002*/
+function cambiarNombreEdad() {
+    // Obtener el nombre y la edad actuales del campo pedido a cambiar
+    let nombreActual = document.getElementById('miTabla').rows[1].cells[0].innerHTML;//innerHTML te permite obtener o establecer el contenido HTML de un elemento
+    let edadActual = document.getElementById('miTabla').rows[1].cells[1].innerHTML;
+
+    // Cambiar el nombre y la edad
+    let nuevoNombre = "Juan";
+    let nuevaEdad = "26";
+
+    // Actualizar el contenido de las celdas
+    document.getElementById('miTabla').rows[1].cells[0].innerHTML = nuevoNombre;
+    document.getElementById('miTabla').rows[1].cells[1].innerHTML = nuevaEdad;
+
+    console.log(`Se cambió el nombre de ${nombreActual} a ${nuevoNombre} y se actualizó su edad de ${edadActual} a ${nuevaEdad}.`);
+}
+
+window.onload = cambiarNombreEdad;
