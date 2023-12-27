@@ -38,3 +38,28 @@ function cambiarNombreEdad() {
 }
 
 window.onload = cambiarNombreEdad;
+
+/*ej 003*/
+function mayorEdad() {
+    let tabla = document.getElementById('miTabla');
+    let filas = tabla.rows;
+/*variables de respuesta final*/
+    let edadMaxima = 0;
+    let nombreMayor = '';
+
+    // Realiza el bucle para ver las personas con la mayor edad
+    for (let i = 1; i < filas.length; i++) {
+        let edadActual = parseInt(filas[i].cells[1].innerHTML, 10);//recopila edades de la tabla
+
+        // Verifica si la edad actual es mayor que la edad máxima encontrada hasta ahora en caso de encontrar una nueva mayor recoge esa
+        if (edadActual > edadMaxima) {
+            edadMaxima = edadActual;
+            nombreMayor = filas[i].cells[0].innerHTML;
+        }
+    }
+
+    // Muestra en la consola el nombre de la persona con la edad más alta
+    console.log('La persona con la edad más alta es', nombreMayor);
+}
+
+window.onload = mayorEdad;
