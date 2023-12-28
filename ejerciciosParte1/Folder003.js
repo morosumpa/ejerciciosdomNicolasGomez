@@ -48,3 +48,21 @@ if (titulo) {
     console.log("No se encontró el título <h1>");
 }
 
+/*ej 005*/
+// Selecciona el primer <li>
+let primerLI = document.querySelector('ul li');
+
+if (primerLi) {
+    // Elimina el atributo data-tipo
+    primerLi.removeAttribute("data-tipo");
+
+    let listaAtributos = Array.from(primerLi.attributes);//primerLi.attributes Obtiene la lista de atributos y Array.from almacena el array que contiene los objetos
+            
+    // muestra los datos restantes tras modificar
+    console.log("Atributos tras eliminar data-tipo:");
+    listaAtributos.forEach(function(atributo) {
+        console.log(atributo.name + ': ' + atributo.value);
+    });
+} else {
+    console.log("No se encontró el primer elemento <li>");
+}
