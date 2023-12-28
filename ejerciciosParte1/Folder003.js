@@ -10,3 +10,14 @@ if (enlace && enlace.hasAttribute("target")) {
 } else {
     console.log("El enlace no tiene target ");
 }
+
+/*ej 002*/
+// Selecciona el primer elemento <li> en la lista
+let primerLi = document.querySelector('ul li');
+
+// Verifica si el elemento tiene el atributo data-tipo
+if (primerLi && primerLi.hasAttribute("data-tipo")) {
+    console.log("El valor del atributo data-tipo es: " + primerLi.getAttribute("data-tipo"));
+} else {
+    console.log("El atributo data-tipo no está presente");
+}
