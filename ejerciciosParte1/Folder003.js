@@ -66,3 +66,28 @@ if (primerLi) {
 } else {
     console.log("No se encontró el primer elemento <li>");
 }
+
+/*ej 006*/
+// Selecciona el enlace <a>
+let link = document.querySelector('a');
+
+// Verifica si se encontró el enlace
+if (link) {
+    // Obtiene el objeto dataset que tiene los atributos personalizados
+    let dataset = link.dataset;
+
+    // variable de verificar los atributos
+    let tieneAtributosPersonalizados = false;
+
+    for (let clave in dataset) {
+        tieneAtributosPersonalizados = true;
+        console.log(clave + ': ' + dataset[clave]);
+    }
+
+    if (!tieneAtributosPersonalizados) {
+        // en caso de no tener atributos
+        console.log("El enlace no tiene atributos personalizados en el dataset.");
+    }
+} else {
+    console.log("No se encontró el enlace <a>");
+}
