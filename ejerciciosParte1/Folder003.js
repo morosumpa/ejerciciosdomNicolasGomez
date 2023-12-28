@@ -34,3 +34,17 @@ if (parrafo) {
 } else {
     console.log("No se encontró el párrafo con la clase 'parrafo'");
 }
+
+/*ej 004*/
+// Selecciona el título <h1>
+let titulo = document.querySelector('h1');
+
+if (titulo) {
+    // Agrega las caracteristicas nuevas al titulo
+    titulo.setAttribute("style", "color: blue;");//primero especifica estilo y luego caracteristicas
+
+    console.log("Se han agregado correctamente");
+} else {
+    console.log("No se encontró el título <h1>");
+}
+
