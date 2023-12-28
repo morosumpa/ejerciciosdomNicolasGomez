@@ -21,3 +21,16 @@ if (primerLi && primerLi.hasAttribute("data-tipo")) {
 } else {
     console.log("El atributo data-tipo no está presente");
 }
+
+/*ej 003*/
+// Selecciona el <p> de la clase parrafo
+let parrafo = document.querySelector('.parrafo');//. delante al ser una clase
+
+if (parrafo) {
+    // Cambia el valor de data-tipo al pedido
+    parrafo.setAttribute("data-tipo", "nuevo-parrafo");
+
+    console.log("El parrafo se cambió a " + parrafo.getAttribute("data-tipo"));
+} else {
+    console.log("No se encontró el párrafo con la clase 'parrafo'");
+}
