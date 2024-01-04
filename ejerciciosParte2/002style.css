@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+}
+
+#clock {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+/*nodos hijos para la distribucion de colores*/
+#clock span:nth-child(1) {
+    color: red;
+}
+
+#clock span:nth-child(2) {
+    color: green;
+}
+
+#clock span:nth-child(3) {
+    color: blue;
+}
+
+#startBtn, #stopBtn {
+    font-size: 1em;
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #020202;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
