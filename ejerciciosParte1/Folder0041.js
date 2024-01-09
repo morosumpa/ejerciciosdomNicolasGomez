@@ -1,3 +1,4 @@
+"use strict";
 let tablapadre = document.getElementById('tabla');
 
 // Verificar si elem.lastChild.nextSibling siempre es null

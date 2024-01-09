@@ -1,3 +1,4 @@
+"use strict";
 // Obtener todos los enlaces dentro de la lista
 let links = document.querySelectorAll('ul a');
 

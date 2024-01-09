@@ -1,3 +1,4 @@
+"use strict";
 let ageTable = document.getElementById('age-table');
 console.log(ageTable);
 

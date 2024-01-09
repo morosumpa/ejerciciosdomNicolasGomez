@@ -1,4 +1,5 @@
- /*ej 001 para corregir los apartados puede que debas tener que comentar de uno a otro, es decir, si quieres corregir el 1 abre un /* desde ej 002 hasta ej 004*/
+"use strict";
+/*ej 001 para corregir los apartados puede que debas tener que comentar de uno a otro, es decir, si quieres corregir el 1 abre un /* desde ej 002 hasta ej 004*/
 // Función para agregar una nueva fila a la tabla
 function agregarFila() {
     let tabla = document.getElementById("miTabla");

@@ -1,3 +1,4 @@
+"use strict";
 document.addEventListener('DOMContentLoaded', function () {//buscando en internet es obligatorio el uso de DOMContentLoaded ya que es lo que permite que el txt desaparezca
     let hideButton = document.getElementById('hideButton');
     let textDiv = document.getElementById('text');

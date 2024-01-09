@@ -1,3 +1,4 @@
+"use strict";
 /*ej 001*/
 /*variable para obtener los valores del documento html*/
 let contenedor = document.getElementById('contenedor');

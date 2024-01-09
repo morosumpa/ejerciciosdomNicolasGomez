@@ -1,3 +1,4 @@
+"use strict";
 function showNotification(options) {
     let notificacion = document.createElement('div');//crea el div
     notificacion.className = 'notification';//da el nombre a la clase classname

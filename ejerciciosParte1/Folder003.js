@@ -1,3 +1,4 @@
+"use strict";
 /*ej 001*/
 
 // recoge el <a> del html

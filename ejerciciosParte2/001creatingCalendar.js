@@ -1,3 +1,4 @@
+"use strict";
 function createCalendar(elem, anyo, mes) {
     let diasSemana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
     let primerDiaMes = new Date(anyo, mes - 1, 1);
