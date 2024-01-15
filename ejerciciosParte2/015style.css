@@ -1,0 +1,21 @@
+/* necesita css para rular*/
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.thumbnail {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.main-image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    padding: 10px;
+}
